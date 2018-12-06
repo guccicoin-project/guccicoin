@@ -1,16 +1,10 @@
-![image](https://user-images.githubusercontent.com/34389545/35821974-62e0e25c-0a70-11e8-87dd-2cfffeb6ed47.png)
-
-#### Master Build Status
-[![Build Status](https://travis-ci.org/turtlecoin/turtlecoin.svg?branch=master)](https://travis-ci.org/turtlecoin/turtlecoin) [![Build status](https://ci.appveyor.com/api/projects/status/github/turtlecoin/turtlecoin?branch=master&svg=true)](https://ci.appveyor.com/project/RocksteadyTC/turtlecoin)
-
-#### Development Build Status
-[![Build Status](https://travis-ci.org/turtlecoin/turtlecoin.svg?branch=development)](https://travis-ci.org/turtlecoin/turtlecoin) [![Build status](https://ci.appveyor.com/api/projects/status/github/turtlecoin/turtlecoin?branch=development&svg=true)](https://ci.appveyor.com/project/RocksteadyTC/turtlecoin)
+# Guccicoin
 
 ### Installing
 
-We offer binary images of the latest releases here: https://latest.turtlecoin.lol
-
-If you would like to compile yourself, read on.
+We have compiled binaries that are available for:
+* [Windows (64-bit)](https://drive.google.com/open?id=1Rr8fSQB03DlB65Qa2Oj27UrwS2zR42y0)
+* [Linux (64-bit)](https://drive.google.com/open?id=1Be1C81l0d2QVZhXo21U9xqyxU188eFAA)
 
 ### How To Compile
 
@@ -19,12 +13,8 @@ If you would like to compile yourself, read on.
 ##### Prerequisites
 
 You will need the following packages: boost, cmake (3.8 or higher), make, and git.
-
-You will also need either GCC/G++, or Clang.
-
-If you are using GCC, you will need GCC-6.0 or higher.
-
-If you are using Clang, you will need Clang 5.0 or higher. You will also need libstdc++\-6.0 or higher.
+You will also need either GCC/G++.
+You will need GCC-6.0 or higher.
 
 ##### GCC setup, on Ubuntu
 
@@ -35,8 +25,8 @@ If you are using Clang, you will need Clang 5.0 or higher. You will also need li
 - `sudo pip install cmake`
 - `export CC=gcc-8`
 - `export CXX=g++-8`
-- `git clone -b master --single-branch https://github.com/turtlecoin/turtlecoin`
-- `cd turtlecoin`
+- `git clone -b master --single-branch https://github.com/guccicoin-project/guccicoin`
+- `cd guccicoin`
 - `mkdir build`
 - `cd build`
 - `cmake ..`
@@ -45,60 +35,7 @@ If you are using Clang, you will need Clang 5.0 or higher. You will also need li
 The binaries will be in the `src` folder when you are complete.
 
 - `cd src`
-- `./TurtleCoind --version`
-
-##### Clang setup, on Ubuntu
-
-- `sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y`
-- `wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | sudo apt-key add -`
-
-You need to modify the below command for your version of ubuntu - see https://apt.llvm.org/
-
-* Ubuntu 14.04 (Trusty)
-- `sudo add-apt-repository "deb https://apt.llvm.org/trusty/ llvm-toolchain-trusty 6.0 main"`
-
-* Ubuntu 16.04 (Xenial)
-- `sudo add-apt-repository "deb https://apt.llvm.org/xenial/ llvm-toolchain-xenial 6.0 main"`
-
-* Ubuntu 18.04 (Bionic)
-- `sudo add-apt-repository "deb https://apt.llvm.org/bionic/ llvm-toolchain-bionic 6.0 main"`
-
-- `sudo apt-get update`
-- `sudo apt-get install aptitude -y`
-- `sudo aptitude install -y -o Aptitude::ProblemResolver::SolutionCost='100*canceled-actions,200*removals' build-essential clang-6.0 libstdc++-7-dev git libboost-all-dev python-pip`
-- `sudo pip install cmake`
-- `export CC=clang-6.0`
-- `export CXX=clang++-6.0`
-- `git clone -b master --single-branch https://github.com/turtlecoin/turtlecoin`
-- `cd turtlecoin`
-- `mkdir build`
-- `cd build`
-- `cmake ..`
-- `make`
-
-The binaries will be in the `src` folder when you are complete.
-
-- `cd src`
-- `./TurtleCoind --version`
-
-##### Generic Linux
-
-Ensure you have the dependencies listed above.
-
-If you want to use clang, ensure you set the environment variables `CC` and `CXX`.
-See the ubuntu instructions for an example.
-
-- `git clone -b master --single-branch https://github.com/turtlecoin/turtlecoin`
-- `cd turtlecoin`
-- `mkdir build`
-- `cd build`
-- `cmake ..`
-- `make`
-
-The binaries will be in the `src` folder when you are complete.
-
-- `cd src`
-- `./TurtleCoind --version`
+- `./GucciCoind --version`
 
 #### Apple
 
@@ -111,8 +48,8 @@ The binaries will be in the `src` folder when you are complete.
 
 ##### Building
 
-- `git clone -b master --single-branch https://github.com/turtlecoin/turtlecoin`
-- `cd turtlecoin`
+- `git clone -b master --single-branch https://github.com/guccicoin-project/guccicoin`
+- `cd guccicoin`
 - `mkdir build && cd $_`
 - `cmake ..` or `cmake -DBOOST_ROOT=<path_to_boost_install> ..` when building
   from a specific boost install. If you used brew to install boost, your path is most likely `/usr/local/include/boost.`
@@ -121,7 +58,7 @@ The binaries will be in the `src` folder when you are complete.
 The binaries will be in the `src` folder when you are complete.
 
 - `cd src`
-- `./TurtleCoind --version`
+- `./GucciCoind --version`
 
 If your version of gcc is too old, you may need to run:
 
@@ -140,7 +77,7 @@ If your version of gcc is too old, you may need to run:
 ##### Building
 
 - From the start menu, open 'x64 Native Tools Command Prompt for vs2017'.
-- `cd <your_turtlecoin_directory>`
+- `cd guccicoin` *<- where you git clone to*
 - `mkdir build`
 - `cd build`
 - `set PATH="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin";%PATH%`
@@ -151,7 +88,7 @@ The binaries will be in the `src/Release` folder when you are complete.
 
 - `cd src`
 - `cd Release`
-- `TurtleCoind.exe --version`
+- `GucciCoind.exe --version`
 
 #### Raspberry Pi 3 B+
 The following images are known to work. Your operation system image **MUST** be 64 bit.
@@ -166,8 +103,8 @@ Once you have a 64 bit image installed, setup proceeds the same as any Linux dis
 
 ##### Building
 
-- `git clone -b master --single-branch https://github.com/turtlecoin/turtlecoin`
-- `cd turtlecoin`
+- `git clone -b master --single-branch https://github.com/guccicoin-project/guccicoin`
+- `cd guccicoin`
 - `mkdir build`
 - `cd build`
 - `cmake ..`
@@ -176,19 +113,20 @@ Once you have a 64 bit image installed, setup proceeds the same as any Linux dis
 The binaries will be in the `src` folder when you are complete.
 
 - `cd src`
-- `./TurtleCoind --version`
+- `./GucciCoind --version`
 
 #### Thanks
-Cryptonote Developers, Bytecoin Developers, Monero Developers, Forknote Project, TurtleCoin Community
+Cryptonote Developers, Bytecoin Developers, Monero Developers, Forknote Project, TurtleCoin Community, GucciCoin Community
 
 ### Copypasta for license when editing files
 
-Hi TurtleCoin contributor, thanks for forking and sending back Pull Requests. Extensive docs about contributing are in the works or elsewhere. For now this is the bit we need to get into all the files we touch. Please add it to the top of the files, see [src/CryptoNoteConfig.h](https://github.com/turtlecoin/turtlecoin/commit/28cfef2575f2d767f6e512f2a4017adbf44e610e) for an example.
+Hi GucciCoin contributor, thanks for forking and sending back Pull Requests. Extensive docs about contributing are in the works or elsewhere. For now this is the bit we need to get into all the files we touch. Please add it to the top of the files, see [src/CryptoNoteConfig.h](https://github.com/turtlecoin/turtlecoin/commit/28cfef2575f2d767f6e512f2a4017adbf44e610e) for an example.
 
 ```
 // Copyright (c) 2012-2017, The CryptoNote developers, The Bytecoin developers
 // Copyright (c) 2014-2018, The Monero Project
 // Copyright (c) 2018, The TurtleCoin Developers
+// Copyright (c) 2018, The GucciCoin Developers
 // 
 // Please see the included LICENSE file for more information.
 ```
