@@ -10,24 +10,28 @@ You will need GCC-6.0 or higher.
 
 #### GCC setup, on Ubuntu
 
-- `sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y`
-- `sudo apt-get update`
-- `sudo apt-get install aptitude -y`
-- `sudo aptitude install -y build-essential g++-8 gcc-8 git libboost-all-dev python-pip`
-- `sudo pip install cmake`
-- `export CC=gcc-8`
-- `export CXX=g++-8`
-- `git clone -b master --single-branch https://github.com/guccicoin-project/guccicoin`
-- `cd guccicoin`
-- `mkdir build`
-- `cd build`
-- `cmake ..`
-- `make`
+```bash
+sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y
+sudo apt-get update
+sudo apt-get install aptitude -y
+sudo aptitude install -y build-essential g++-8 gcc-8 git libboost-all-dev python-pip
+sudo pip install cmake
+export CC=gcc-8
+export CXX=g++-8
+git clone -b master --single-branch https://github.com/guccicoin-project/guccicoin
+cd guccicoin
+mkdir build
+cd build
+cmake ..
+make
+```
 
 The binaries will be in the `src` folder when you are complete.
 
-- `cd src`
-- `./GucciCoind --version`
+```bash
+cd src
+./GucciCoind --version
+```
 
 #### Apple
 
@@ -40,23 +44,28 @@ The binaries will be in the `src` folder when you are complete.
 
 #### Building
 
-- `git clone -b master --single-branch https://github.com/guccicoin-project/guccicoin`
-- `cd guccicoin`
-- `mkdir build && cd $_`
-- `cmake ..` or `cmake -DBOOST_ROOT=<path_to_boost_install> ..` when building
-  from a specific boost install. If you used brew to install boost, your path is most likely `/usr/local/include/boost.`
-- `make`
+```bash
+git clone -b master --single-branch https://github.com/guccicoin-project/guccicoin
+cd guccicoin
+mkdir build && cd $_
+cmake .. # or `cmake -DBOOST_ROOT=<path_to_boost_install> ..` when building from a specific boost install. If you used brew to install boost, your path is most likely `/usr/local/include/boost.`
+make
+```
 
 The binaries will be in the `src` folder when you are complete.
 
-- `cd src`
-- `./GucciCoind --version`
+```bash
+cd src
+./GucciCoind --version
+```
 
 If your version of gcc is too old, you may need to run:
 
-- `brew install gcc@8`
-- `export CC=gcc-8`
-- `export CXX=g++-8`
+```bash
+brew install gcc@8
+export CC=gcc-8
+export CXX=g++-8
+```
 
 ### Windows
 
@@ -69,18 +78,22 @@ If your version of gcc is too old, you may need to run:
 #### Building
 
 - From the start menu, open 'x64 Native Tools Command Prompt for vs2017'.
-- `cd guccicoin` *<- where you git clone to*
-- `mkdir build`
-- `cd build`
-- `set PATH="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin";%PATH%`
-- `cmake -G "Visual Studio 15 2017 Win64" .. -DBOOST_ROOT=C:/local/boost_1_68_0` (Or your boost installed dir.)
-- `MSBuild TurtleCoin.sln /p:Configuration=Release /m`
+```bash
+cd guccicoin # *<- where you git clone to*
+mkdir build
+cd build
+set PATH="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin";%PATH%
+cmake -G "Visual Studio 15 2017 Win64" .. -DBOOST_ROOT=C:/local/boost_1_68_0` # (Or your boost installed dir.)
+MSBuild TurtleCoin.sln /p:Configuration=Release /m
+```
 
 The binaries will be in the `src/Release` folder when you are complete.
 
-- `cd src`
-- `cd Release`
-- `GucciCoind.exe --version`
+```bash
+cd src
+cd Release
+GucciCoind.exe --version
+```
 
 ### Raspberry Pi 3 B+
 The following images are known to work. Your operation system image **MUST** be 64 bit.
@@ -95,14 +108,18 @@ Once you have a 64 bit image installed, setup proceeds the same as any Linux dis
 
 #### Building
 
-- `git clone -b master --single-branch https://github.com/guccicoin-project/guccicoin`
-- `cd guccicoin`
-- `mkdir build`
-- `cd build`
-- `cmake ..`
-- `make`
+```bash
+git clone -b master --single-branch https://github.com/guccicoin-project/guccicoin
+cd guccicoin
+mkdir build
+cd build
+cmake ..
+make
+```
 
 The binaries will be in the `src` folder when you are complete.
 
-- `cd src`
-- `./GucciCoind --version`
+```bash
+cd src
+./GucciCoind --version
+```

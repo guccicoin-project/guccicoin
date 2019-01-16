@@ -12,9 +12,11 @@
 
 ## Installing
 
+> The latest version of the compiled binaries is `v002`. At this time we have only compiled for Windows as it is a very minor update. *If you are doing anything on Linux it is recommended to build your own.*
+
 We have compiled binaries that are available for:
-* [Windows [v001] (64-bit)](https://drive.google.com/open?id=1Rr8fSQB03DlB65Qa2Oj27UrwS2zR42y0)
-* [Linux [v001] (64-bit)](https://drive.google.com/open?id=1Be1C81l0d2QVZhXo21U9xqyxU188eFAA)
+* [Windows [v002] (64-bit)](https://drive.google.com/file/d/1hwW7bNIqx-6tZuRSGo7AxUEtFkDchoa4/view?usp=sharing)
+* <del>[Linux [v001] (64-bit)](https://drive.google.com/open?id=1Be1C81l0d2QVZhXo21U9xqyxU188eFAA)</del> *(outdated, see above)*
 
 ## Notes
 
