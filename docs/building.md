@@ -1,10 +1,3 @@
-# Guccicoin
-A memey cryptocurrency which is just [Turtlecoin](https://turtlecoin.lol) but slightly edited.
-
-[![forthebadge](https://forthebadge.com/images/badges/powered-by-electricity.svg)](https://forthebadge.com)
-
-**Look at the website for more user-friendly documentation --> https://guccicoin.cf/**
-
 ## How To Compile
 
 ### Linux
@@ -36,7 +29,7 @@ The binaries will be in the `src` folder when you are complete.
 - `cd src`
 - `./GucciCoind --version`
 
-### Apple
+#### Apple
 
 #### Prerequisites
 
@@ -113,6 +106,3 @@ The binaries will be in the `src` folder when you are complete.
 
 - `cd src`
 - `./GucciCoind --version`
-
-### Thanks
-Cryptonote Developers, Bytecoin Developers, Monero Developers, Forknote Project, TurtleCoin Community, GucciCoin Community
