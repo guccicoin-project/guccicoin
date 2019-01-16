@@ -31,7 +31,7 @@ const size_t   BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW             = 60;
 const size_t   BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW_V3          = 11;
 
 // MONEY_SUPPLY - total number coins to be generated
-// (10^2 * 1000000000000) 1000000000000 coins
+// (10^2 * 1000000000000) 1,000,000,000,000 coins
 const uint64_t MONEY_SUPPLY                                  = UINT64_C(100000000000000);
 const uint32_t ZAWY_DIFFICULTY_BLOCK_INDEX                   = 0;
 const size_t   ZAWY_DIFFICULTY_V2                            = 0;
@@ -249,7 +249,7 @@ const static   boost::uuids::uuid CRYPTONOTE_NETWORK         =
 };
 
 const char* const SEED_NODES[] = {
-  "195.201.145.173:10171",
-  "116.203.20.57:10171"
+  "195.201.145.173:10179",  // Primary Seed
+  "195.201.145.173:10178"   // Secondary Seed
 };
 } // CryptoNote
